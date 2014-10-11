@@ -5,7 +5,16 @@
     <title>Custom Directives Tutorial</title>
   </head>
   <body>
-    <hello-world/>
+
+    <div ng-controller="OtherController">
+      <hello-world/>
+    </div>
+
+    <div ng-controller="MainController">
+      <input type="text" placeholder="Enter a color" ng-model="color"/>
+      <color-world/>
+    </div>
+
     <script src="app.js"></script>
     <script src="directives.js"></script>
     <script src="controllers.js"></script>
