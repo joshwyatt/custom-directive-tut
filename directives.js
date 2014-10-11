@@ -14,6 +14,9 @@ function colorWorld(){
   return {
     restrict: 'EA',
     replace: 'true',
+    scope: {
+      color: '@'
+    },
     template: '<p style="background-color:{{color}}">Color World</p>',
     link: function(scope, elem, attrs){
       elem.bind('click', function(){
