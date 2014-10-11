@@ -22,6 +22,10 @@ function colorWorld(){
           scope.color = "white";
         });
       });
+      elem.bind('mouseover', function(){
+        elem.css('cursor', 'pointer');
+        elem.css('background-color', attrs.someAttribute);
+      });
     }
   };
 }
