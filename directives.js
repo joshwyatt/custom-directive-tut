@@ -15,7 +15,7 @@ function colorWorld(){
     restrict: 'EA',
     replace: 'true',
     scope: {
-      color: '@'
+      color: '='
     },
     template: '<p style="background-color:{{color}}">Color World</p>',
     link: function(scope, elem, attrs){
